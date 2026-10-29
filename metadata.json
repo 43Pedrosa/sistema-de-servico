@@ -1,0 +1,6 @@
+{
+  "name": "Store Acessórios — Sistema de Ordens de Serviço",
+  "description": "Sistema PWA profissional para acompanhamento e gestão de Ordens de Serviço (OS) de celulares e acessórios da Store Acessórios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

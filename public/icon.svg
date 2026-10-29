@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F1F1F"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A1A"/>
+      <stop offset="100%" stop-color="#E94B00"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA040"/>
+      <stop offset="100%" stop-color="#FF6500"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#FF6500" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle border highlight -->
+  <rect x="6" y="6" width="500" height="500" rx="106" fill="none" stroke="#333333" stroke-width="3" opacity="0.6"/>
+
+  <!-- Phone Outline with maintenance icon -->
+  <g transform="translate(106, 66)" filter="url(#glow)">
+    <!-- Smartphone Chassis -->
+    <rect x="25" y="10" width="250" height="360" rx="36" fill="#1A1A1A" stroke="url(#brandGrad)" stroke-width="8"/>
+    <!-- Speaker ear piece -->
+    <rect x="110" y="26" width="80" height="6" rx="3" fill="#444444"/>
+    <!-- Screen Glass Area -->
+    <rect x="37" y="44" width="226" height="280" rx="18" fill="#0D0D0D"/>
+    <!-- Home indicator bar -->
+    <rect x="115" y="344" width="70" height="5" rx="2.5" fill="#555555"/>
+
+    <!-- Central Emblem inside screen: Store 'S' badge combined with Repair wrench & checkmark -->
+    <!-- Wrench tool in background -->
+    <path d="M120 120 L180 180 M135 105 A24 24 0 0 1 155 125 L145 135 L125 115 L135 105 Z" fill="none" stroke="#FF6500" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+    
+    <!-- Stylized "S" Store Logo Shape -->
+    <path d="M185 118 C160 102 120 110 115 138 C110 162 130 174 150 182 C178 194 188 206 182 226 C174 248 138 254 115 240 M182 122 L198 112" fill="none" stroke="url(#brandGrad)" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Screwdriver / Tool Cross Accent -->
+    <circle cx="150" cy="184" r="14" fill="#FF6500"/>
+    <path d="M144 184 L156 184 M150 178 L150 190" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Brand Text: STORE ACESSÓRIOS -->
+  <text x="256" y="455" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">STORE</text>
+  <text x="256" y="482" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#FF6500" text-anchor="middle" letter-spacing="6">ACESSÓRIOS</text>
+</svg>
